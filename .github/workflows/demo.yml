@@ -1,0 +1,13 @@
+name: Print Hello World every minute
+
+on:
+  schedule:
+    - cron: '*/1 * * * *'  # Run every minute
+
+jobs:
+  print_hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run Python script
+        run: python test.py
