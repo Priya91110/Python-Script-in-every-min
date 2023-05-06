@@ -3,7 +3,7 @@ name: Print Hello World every minute
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 1 * * *'  # Run every minute
+#     - cron: '0 1 * * *'  # Run every minute
 
 jobs:
   print_hello_world:
